@@ -1,23 +1,58 @@
-body {
-  background-color: #3b5998; /* Adjust to match your exact blue background color */
-  writing-mode: horizontal-tb; /* Ensures standard horizontal text */
-  transform: none;
-  max-width: 450px;
-  margin: 0 auto;
-  background-color: #3b5998; /* The blue background from your mockup */
-  font-family: Arial, sans-serif;
+/* HEADER & MENU MOCKUP STYLING */
+header {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+header > p {
+  color: #ffffff;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.menu-box {
+  background-color: #f0ad4e; /* Adjust to match your exact yellow/gold mockup tone */
   padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
-#services h2, 
-.service-category > h3 {
-  color: #ffffff; /* Make section titles white to pop against the blue */
+.menu-box h2 {
+  color: #1a1a1a;
+  font-style: italic;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
 }
 
-.card {
+.menu-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-box li {
+  margin-bottom: 12px;
+}
+
+.menu-button {
+  display: block;
   background-color: #ffffff;
-  border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #1a365d;
+  text-decoration: none;
+  padding: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.2s;
 }
+
+.menu-button:hover {
+  background-color: #f8f9fa;
+}
+
