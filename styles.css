@@ -1,0 +1,16 @@
+body {
+  background-color: #3b5998; /* Adjust to match your exact blue background color */
+}
+
+#services h2, 
+.service-category > h3 {
+  color: #ffffff; /* Make section titles white to pop against the blue */
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
