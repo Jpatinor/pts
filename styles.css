@@ -1,5 +1,12 @@
 body {
   background-color: #3b5998; /* Adjust to match your exact blue background color */
+  writing-mode: horizontal-tb; /* Ensures standard horizontal text */
+  transform: none;
+  max-width: 450px;
+  margin: 0 auto;
+  background-color: #3b5998; /* The blue background from your mockup */
+  font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
 #services h2, 
