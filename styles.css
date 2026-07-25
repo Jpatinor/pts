@@ -71,15 +71,19 @@ header > p {
 }
 
 /* SERVICES SECTION */
+#services {
+  background-color: transparent; /* Lets the body's blue background show through */
+}
+
 #services h2, 
 .service-category > h3 {
-  color: #ffffff;
+  color: #ffffff; /* Makes section headers white against the blue background */
   margin-top: 25px;
   margin-bottom: 15px;
 }
 
 .card {
-  background-color: #ffffff;
+  background-color: #ffffff; /* Keeps individual service cards clean white */
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 20px;
@@ -95,6 +99,7 @@ header > p {
   color: #555555;
   font-size: 0.95rem;
 }
+
 
 img {
   max-width: 100%;
