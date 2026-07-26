@@ -127,6 +127,13 @@ main > section#why-choose-us {
   text-align: center;
 }
 
+main > section#contact {
+  text-align: center;
+  background-color: var(--pink);
+  padding: 40px 20px;
+  color: var(--white);
+}
+
 section#why-choose-us > h2 {
   margin-bottom: 20px;
 }
