@@ -116,17 +116,121 @@ img {
 }
 
 /* WHY CHOOSE US SECTION */
-#why-choose-us {
+/* WHY CHOOSE US SECTION */
+.pink-banner {
+  background-color: #D9526F; /* Pink */
   color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
 
-#why-choose-us ul {
-  padding-left: 20px;
-  font-size: 1.1em;
+.benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Creates the 2x2 grid */
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
 }
 
-#why-choose-us li {
+.benefits-grid li {
+  padding: 20px 10px;
+  border-radius: 8px;
+  text-align: center;
+  color: #1E1E1E;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-height: 80px;
+}
+
+/* Specific background colors for the grid */
+.bg-teal { background-color: #4CA7C0; }
+.bg-lavender { background-color: #6B8FE7; }
+.bg-yellow { background-color: #E9BB57; }
+.bg-white { background-color: #ffffff; }
+
+/* PRICING SECTION */
+#prices h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.pricing-group {
+  margin-bottom: 30px;
+}
+
+.pricing-group h3 {
+  color: #E9BB57; /* Yellow category headers */
   margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden; /* Keeps the table corners rounded */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+th {
+  background-color: #E9BB57; /* Yellow table header */
+  color: #1E1E1E;
+  text-transform: uppercase;
+  padding: 12px;
+  text-align: left;
+}
+
+td {
+  background-color: #ffffff; /* White table rows */
+  color: #1E1E1E;
+  padding: 12px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+tr:last-child td {
+  border-bottom: none; /* Removes the line at the very bottom of the table */
+}
+
+/* CONTACT / TAKE THE FIRST STEP SECTION */
+#contact {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 50px;
+  padding: 30px 20px;
+}
+
+#contact h2 {
+  margin-top: 0;
+}
+
+#contact p {
+  margin-bottom: 25px;
+}
+
+#contact .menu-button {
+  background-color: #E9BB57; /* Yellow button */
+  display: inline-block;
+  width: auto;
+  padding: 12px 40px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: #E9BB57;
+  text-decoration: none;
 }
 
 /* PRICING TABLES */
