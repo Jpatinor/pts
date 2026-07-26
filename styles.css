@@ -300,5 +300,10 @@ body > footer {
 
 body > footer a {
   color: var(--white);
-  text-decoration: none;
+  padding: 20px;
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
