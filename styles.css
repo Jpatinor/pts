@@ -12,8 +12,8 @@
 body {
   max-width: 450px;
   margin: 0 auto;
-  background-color: #484FB7; /* Corrected Purple */
-  font-family: 'Inter', sans-serif; /* Applied Inter to all text */
+  background-color: #484FB7;
+  font-family: 'Inter', sans-serif;
   color: #333333;
   padding: 20px;
   line-height: 1.6;
@@ -42,11 +42,13 @@ nav h2 {
 h3 {
   font-size: 1.5em;
   color: #ffffff;
+  margin-bottom: 15px;
 }
 
 h4 {
   font-size: 1.15em;
   color: #2b4c7e;
+  margin-bottom: 10px 0 8px 0;
 }
 
 /* HEADER & MENU */
@@ -86,6 +88,110 @@ header > p {
   font-weight: bold;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+ .card, .pricing-category {
+  background-color: #ffffff; 
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card p {
+  color: #1E1E1E;
+  font-size: 1em;
+}
+
+.pricing-category h3 {
+  color: #4CA7C0; /* Teal headers inside the white pricing cards */
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* WHY CHOOSE US SECTION */
+#why-choose-us {
+  color: #ffffff;
+}
+
+#why-choose-us ul {
+  padding-left: 20px;
+  font-size: 1.1em;
+}
+
+#why-choose-us li {
+  margin-bottom: 10px;
+}
+
+/* PRICING TABLES */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px 8px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+th {
+  color: #1E1E1E;
+  font-weight: bold;
+}
+
+td {
+  color: #555555;
+}
+
+tr:last-child td {
+  border-bottom: none; /* Removes the bottom line on the last table row */
+}
+
+/* CONTACT / TAKE THE FIRST STEP SECTION */
+#contact {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 40px;
+  padding: 30px 20px;
+  background-color: #4CA7C0; /* Teal background to make it stand out */
+  border-radius: 12px;
+}
+
+#contact h2 {
+  margin-top: 0;
+}
+
+#contact p {
+  margin-bottom: 20px;
+}
+
+#contact .menu-button {
+  background-color: #E9BB57; /* Yellow button for contrast */
+  display: inline-block;
+  width: auto;
+  padding: 12px 30px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: #E9BB57;
+  text-decoration: none;
 }
 
 /* SERVICES SECTION */
