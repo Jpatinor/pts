@@ -1,306 +1,269 @@
-/* CSS BY (add your name) */
+/* CSS BY YOUR NAME */
 
 /* IMPORTED FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
 
 /* CSS RESET */
 *, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* ROOT VARIABLES */
 :root {
-  --teal: #4CA7C0;
-  --purple: #484FB7;
-  --lavender: #6B8FE7;
-  --yellow: #E9BB57;
-  --pink: #D9526F;
-  --dark-gray: #1E1E1E;
-  --white: #ffffff;
-  --font-h1-h2: 'Kavoon', serif;
-  --font-text: 'Inter', sans-serif;
+    --teal: #4CA7C0;
+    --purple: #484FB7;
+    --lavender: #6B8FE7;
+    --yellow: #E9BB57;
+    --pink: #D9526F;
+    --dark-gray: #1E1E1E;
+    --white: #ffffff;
+    
+    --font-heading: 'Kavoon', serif;
+    --font-body: 'Inter', sans-serif;
 }
 
 /* GLOBAL STYLES (mobile first/small) */
 body {
-  max-width: 450px;
-  margin: 0 auto;
-  background-color: var(--purple);
-  font-family: var(--font-text);
-  color: var(--dark-gray);
-  line-height: 1.6;
+    background-color: var(--lavender);
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-body);
+    color: var(--white);
 }
 
-h1, h2 {
-  font-family: var(--font-h1-h2);
+div {
+    width: 100%;
+    max-width: 450px;
+    background-color: var(--purple);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
-h1 { font-size: 3em; color: var(--yellow); }
-h2 { font-size: 2em; color: var(--white); }
-h3 { font-size: 1.5em; color: var(--white); margin-bottom: 15px; }
-h4 { font-size: 1.15em; color: var(--purple); margin: 10px 0 8px 0; }
-
-/* Header & Menu (Using complex child selectors) */
-body > header {
-  text-align: center;
-  padding: 20px 20px 0 20px;
-  margin-bottom: 30px;
+header {
+    text-align: center;
+    padding: 35px 20px 25px;
+    background-color: var(--purple);
 }
 
-header > p {
-  color: var(--white);
-  font-style: italic;
-  margin-bottom: 20px;
+header h1 {
+    font-family: var(--font-heading);
+    font-size: 3em;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
 }
 
-header > nav {
-  background-color: var(--yellow);
-  padding: 20px;
-  border-radius: 6px;
-  text-align: center;
+header p {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-style: italic;
+    opacity: 0.9;
 }
 
-header > nav > h2 {
-  font-size: 1.5em;
-  color: var(--dark-gray);
-  margin: 0 0 15px 0;
+nav {
+    background-color: var(--yellow);
+    padding: 25px 20px;
+    text-align: center;
 }
 
-header > nav > ul {
-  list-style: none;
+nav > h2 {
+    font-family: var(--font-heading);
+    color: var(--dark-gray);
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
 }
 
-header > nav > ul > li {
-  margin-bottom: 10px;
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-header > nav > ul > li > a {
-  display: inline-block;
-  background-color: var(--white);
-  color: var(--purple);
-  text-decoration: none;
-  padding: 12px;
-  font-weight: bold;
-  border-radius: 4px;
-  width: 100%;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+nav li a {
+    display: block;
+    background-color: var(--white);
+    color: var(--purple);
+    font-family: var(--font-body);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Services Section (Targeting articles directly) */
-main > section#services {
-  padding: 0 20px 20px 20px;
+main > section > h2 {
+    font-family: var(--font-heading);
+    font-size: 2em;
+    padding: 30px 20px 10px;
 }
 
-section#services > h2 {
-  margin-bottom: 15px;
+main section section h3 {
+    color: var(--yellow);
+    font-family: var(--font-heading);
+    font-size: 1.5em;
+    padding: 20px 20px 10px;
+    font-weight: normal;
 }
 
-/* Services Section Cards (White boxes for each service group) */
-section#services > section {
-  background-color: var(--white);
-  border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+main article {
+    background-color: var(--white);
+    color: var(--dark-gray);
+    margin: 0 20px 20px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-section#services article {
-  background-color: var(--white);
-  border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+main article div {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    max-width: none;
+    background: transparent;
 }
 
-section#services article:last-child {
-  border-bottom: none;
+main article h4 {
+    color: var(--purple);
+    font-family: var(--font-heading);
+    font-size: 1.15em;
+    margin-bottom: 10px;
+    font-weight: 700;
 }
 
-section#services article > p {
-  color: var(--dark-gray);
-  font-size: 1em;
+main article p {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #444444;
 }
 
-section#services article > img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  flex-shrink: 0;
-  display: block;
-  margin: 0;
+#why-choose-us {
+    background-color: var(--pink);
+    padding: 30px 20px;
+    text-align: center;
 }
 
-/* Pricing Section Cards (White boxes for each pricing group) */
-section#prices > section {
-  background-color: var(--white);
-  border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+#why-choose-us > h2 {
+    font-family: var(--font-heading);
+    font-size: 2em;
+    margin-bottom: 20px;
+    padding: 0;
 }
 
-section#prices > section > h3 {
-  color: var(--teal); /* Teal header inside the white pricing box */
-  margin-bottom: 10px;
-  font-size: 1.15em;
-  font-family: var(--font-text); 
+/* Target the grid container div */
+#why-choose-us > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    max-width: none;
+    background: transparent;
 }
 
-section#prices table {
-  width: 100%;
-  border-collapse: collapse;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Target individual grid items inside Why Choose Us */
+#why-choose-us > div > div {
+    padding: 30px 15px;
+    border-radius: 12px;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    color: var(--dark-gray);
+    max-width: none;
 }
 
-section#prices th {
-  background-color: var(--yellow);
-  color: var(--dark-gray);
-  padding: 10px;
-  text-align: left;
-  font-family: var(--font-text);
+#why-choose-us > div > div:nth-child(1) { background-color: var(--teal); }
+#why-choose-us > div > div:nth-child(2) { background-color: var(--lavender); color: var(--white); }
+#why-choose-us > div > div:nth-child(3) { background-color: var(--yellow); }
+#why-choose-us > div > div:nth-child(4) { background-color: var(--white); }
+
+table {
+    width: calc(100% - 40px);
+    margin: 0 20px 15px;
+    border-collapse: collapse;
+    background-color: var(--white);
+    color: var(--dark-gray);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 
-section#prices td {
-  background-color: var(--white);
-  color: var(--dark-gray);
-  padding: 10px;
-  border-bottom: 1px solid #eeeeee;
+table caption {
+    display: none;
 }
 
-section#prices tr:last-child td {
-  border-bottom: none;
+th {
+    background-color: var(--yellow);
+    color: var(--dark-gray);
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    padding: 12px;
+    letter-spacing: 0.5px;
 }
 
-/* Why Choose Us Section (Using grid and nth-child selectors) */
-main > section#why-choose-us {
-  background-color: var(--pink);
-  padding: 30px 20px;
-  text-align: center;
+td {
+    font-family: var(--font-body);
+    padding: 12px;
+    text-align: center;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #eee;
 }
 
-main > section#contact {
-  text-align: center;
-  background-color: var(--pink);
-  padding: 40px 20px;
-  color: var(--white);
+tr:last-child td {
+    border-bottom: none;
 }
 
-section#why-choose-us > h2 {
-  margin-bottom: 20px;
+#cta {
+    background-color: var(--pink);
+    padding: 40px 25px;
+    text-align: center;
 }
 
-section#why-choose-us > ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-  list-style: none;
+#cta > h2 {
+    font-family: var(--font-heading);
+    font-size: 2em;
+    margin-bottom: 15px;
+    padding: 0;
 }
 
-section#why-choose-us > ul > li {
-  padding: 20px 10px;
-  border-radius: 8px;
-  color: var(--dark-gray);
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  min-height: 80px;
+#cta > p {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
 }
 
-/* Complex nth-child selectors replacing color classes */
-section#why-choose-us > ul > li:nth-child(1) { background-color: var(--teal); }
-section#why-choose-us > ul > li:nth-child(2) { background-color: var(--lavender); }
-section#why-choose-us > ul > li:nth-child(3) { background-color: var(--yellow); }
-section#why-choose-us > ul > li:nth-child(4) { background-color: var(--white); }
-
-/* Pricing Section */
-main > section#prices {
-  padding: 30px 20px;
+#cta button {
+    background-color: var(--white);
+    color: var(--dark-gray);
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 100%;
+    letter-spacing: 1px;
 }
 
-section#prices > h2 {
-  margin-bottom: 20px;
+footer {
+    background-color: var(--purple);
+    padding: 25px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
 }
 
-section#prices > section {
-  margin-bottom: 30px;
-}
-
-section#prices > section > h3 {
-  color: var(--yellow);
-  margin-bottom: 10px;
-  font-size: 1.15em;
-  font-family: var(--font-text); 
-}
-
-section#prices table {
-  width: 100%;
-  border-collapse: collapse;
-  border-radius: 8px;
-  overflow: hidden; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-section#prices th {
-  background-color: var(--yellow);
-  color: var(--dark-gray);
-  padding: 12px;
-  text-align: left;
-  font-family: var(--font-text);
-}
-
-section#prices td {
-  background-color: var(--white);
-  color: var(--dark-gray);
-  padding: 12px;
-  border-bottom: 1px solid #eeeeee;
-}
-
-section#prices tr:last-child td {
-  border-bottom: none;
-}
-
-/* Contact / Take the First Step Section */
-main > section#contact {
-  text-align: center;
-  background-color: var(--pink);
-  padding: 40px 20px;
-  color: var(--white);
-}
-
-section#contact > h2 {
-  margin-bottom: 15px;
-}
-
-section#contact > p {
-  margin-bottom: 25px;
-}
-
-section#contact > a {
-  background-color: var(--white);
-  color: var(--dark-gray);
-  text-decoration: none;
-  font-weight: bold;
-  width: auto;
-  padding: 12px 40px;
-  display: inline-block;
-  border-radius: 4px;
-}
-
-/* Footer Section */
-body > footer > *{
-  margin: 0;
-}
-
-body > footer  {
-  color: var(--white);
-  padding: 20px;
-  font-size: 0.9em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+footer p a {
+    color: var(--white);
+    text-decoration: underline;
 }
