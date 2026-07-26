@@ -79,7 +79,7 @@ header > nav > ul > li {
 header > nav > ul > li > a {
   display: inline-block;
   background-color: var(--white);
-  color: var(--dark-gray);
+  color: var(--purple);
   text-decoration: none;
   padding: 12px;
   font-weight: bold;
