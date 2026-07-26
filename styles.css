@@ -110,6 +110,7 @@ section#services article {
 }
 
 section#services article > p {
+  color: var(--dark-gray);
   font-size: 1em;
 }
 
