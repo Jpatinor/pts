@@ -22,12 +22,12 @@ header, main, footer {
 h1, h2 {
     font-family: 'Kavoon', serif;
     color: #ffffff;
-    text-align: left;
 }
 
 h1 {
     font-size: 3em;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 nav h2 {
@@ -40,6 +40,7 @@ nav h2 {
 
 h2 {
     font-size: 2em;
+    text-align: left;
 }
 
 h3 {
