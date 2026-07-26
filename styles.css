@@ -1,4 +1,6 @@
-/* IMPORT FONTS */
+/* CSS BY (add your name) */
+
+/* IMPORTED FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
 
 /* CSS RESET */
@@ -8,141 +10,138 @@
   padding: 0;
 }
 
-/* GLOBAL STYLES */
+/* ROOT VARIABLES */
+:root {
+  --teal: #4CA7C0;
+  --purple: #484FB7;
+  --lavender: #6B8FE7;
+  --yellow: #E9BB57;
+  --pink: #D9526F;
+  --dark-gray: #1E1E1E;
+  --white: #ffffff;
+  --font-h1-h2: 'Kavoon', serif;
+  --font-text: 'Inter', sans-serif;
+}
+
+/* GLOBAL STYLES (mobile first/small) */
 body {
   max-width: 450px;
   margin: 0 auto;
-  background-color: #484FB7; /* Purple */
-  font-family: 'Inter', sans-serif;
-  color: #333333;
+  background-color: var(--purple);
+  font-family: var(--font-text);
+  color: var(--dark-gray);
   line-height: 1.6;
 }
 
-/* TYPOGRAPHY SETTINGS */
 h1, h2 {
-  font-family: 'Kavoon', serif;
+  font-family: var(--font-h1-h2);
 }
 
-h1 {
-  font-size: 3em;
-  color: #E9BB57; /* Yellow */
-}
+h1 { font-size: 3em; color: var(--yellow); }
+h2 { font-size: 2em; color: var(--white); }
+h3 { font-size: 1.5em; color: var(--white); margin-bottom: 15px; }
+h4 { font-size: 1.15em; color: var(--purple); margin: 10px 0 8px 0; }
 
-h2 {
-  font-size: 2em;
-  color: #ffffff; /* White */
-}
-
-nav h2 {
-  font-size: 1.5em;
-  color: #1E1E1E; /* Dark Gray */
-  margin: 0 0 15px 0;
-}
-
-h3 {
-  font-size: 1.5em;
-  color: #ffffff;
-  margin-bottom: 15px;
-}
-
-h4 {
-  font-size: 1.15em;
-  color: #484FB7; /* Purple */
-  margin: 10px 0 8px 0;
-}
-
-/* HEADER & MENU */
-header {
+/* Header & Menu (Using complex child selectors) */
+body > header {
   text-align: center;
   padding: 20px 20px 0 20px;
   margin-bottom: 30px;
 }
 
 header > p {
-  color: #ffffff;
+  color: var(--white);
   font-style: italic;
   margin-bottom: 20px;
 }
 
-.menu-box {
-  background-color: #E9BB57;
+header > nav {
+  background-color: var(--yellow);
   padding: 20px;
   border-radius: 6px;
   text-align: center;
 }
 
-.menu-box ul {
+header > nav > h2 {
+  font-size: 1.5em;
+  color: var(--dark-gray);
+  margin: 0 0 15px 0;
+}
+
+header > nav > ul {
   list-style: none;
 }
 
-.menu-box li {
+header > nav > ul > li {
   margin-bottom: 10px;
 }
 
-.menu-button {
+header > nav > ul > li > a {
   display: inline-block;
-  background-color: #ffffff;
-  color: #1E1E1E;
+  background-color: var(--white);
+  color: var(--dark-gray);
   text-decoration: none;
   padding: 12px;
   font-weight: bold;
   border-radius: 4px;
   width: 100%;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  text-align: center;
 }
 
-/* SERVICES SECTION */
-#services {
+/* Services Section (Targeting articles directly) */
+main > section#services {
   padding: 0 20px 20px 20px;
 }
 
-#services h2 {
+section#services > h2 {
   margin-bottom: 15px;
 }
 
-.card {
-  background-color: #ffffff; 
+section#services > section {
+  margin-bottom: 30px;
+}
+
+section#services article {
+  background-color: var(--white); 
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.card p {
-  color: #1E1E1E;
+section#services article > p {
   font-size: 1em;
 }
 
-img {
+section#services article > img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto 10px auto;
 }
 
-/* WHY CHOOSE US SECTION */
-#why-choose-us {
-  background-color: #D9526F; /* Pink block */
+/* Why Choose Us Section (Using grid and nth-child selectors) */
+main > section#why-choose-us {
+  background-color: var(--pink);
   padding: 30px 20px;
   text-align: center;
 }
 
-#why-choose-us h2 {
+section#why-choose-us > h2 {
   margin-bottom: 20px;
 }
 
-.benefits-grid {
+section#why-choose-us > ul {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2x2 grid */
+  grid-template-columns: 1fr 1fr;
   gap: 15px;
   list-style: none;
 }
 
-.benefits-grid li {
+section#why-choose-us > ul > li {
   padding: 20px 10px;
   border-radius: 8px;
-  color: #1E1E1E;
+  color: var(--dark-gray);
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -151,32 +150,33 @@ img {
   min-height: 80px;
 }
 
-.bg-teal { background-color: #4CA7C0; }
-.bg-lavender { background-color: #6B8FE7; }
-.bg-yellow { background-color: #E9BB57; }
-.bg-white { background-color: #ffffff; }
+/* Complex nth-child selectors replacing color classes */
+section#why-choose-us > ul > li:nth-child(1) { background-color: var(--teal); }
+section#why-choose-us > ul > li:nth-child(2) { background-color: var(--lavender); }
+section#why-choose-us > ul > li:nth-child(3) { background-color: var(--yellow); }
+section#why-choose-us > ul > li:nth-child(4) { background-color: var(--white); }
 
-/* PRICING SECTION */
-#prices {
+/* Pricing Section */
+main > section#prices {
   padding: 30px 20px;
 }
 
-#prices h2 {
+section#prices > h2 {
   margin-bottom: 20px;
 }
 
-.pricing-group {
+section#prices > section {
   margin-bottom: 30px;
 }
 
-.pricing-group h3 {
-  color: #E9BB57; /* Yellow category headers */
+section#prices > section > h3 {
+  color: var(--yellow);
   margin-bottom: 10px;
   font-size: 1.15em;
-  font-family: 'Inter', sans-serif; /* Override for pricing categories */
+  font-family: var(--font-text); 
 }
 
-table {
+section#prices table {
   width: 100%;
   border-collapse: collapse;
   border-radius: 8px;
@@ -184,57 +184,61 @@ table {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-th {
-  background-color: #E9BB57; /* Yellow table header */
-  color: #1E1E1E;
+section#prices th {
+  background-color: var(--yellow);
+  color: var(--dark-gray);
   padding: 12px;
   text-align: left;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
 }
 
-td {
-  background-color: #ffffff; /* White table rows */
-  color: #1E1E1E;
+section#prices td {
+  background-color: var(--white);
+  color: var(--dark-gray);
   padding: 12px;
   border-bottom: 1px solid #eeeeee;
 }
 
-tr:last-child td {
+section#prices tr:last-child td {
   border-bottom: none;
 }
 
-/* CONTACT / TAKE THE FIRST STEP SECTION */
-#contact {
+/* Contact / Take the First Step Section */
+main > section#contact {
   text-align: center;
-  background-color: #D9526F; /* Pink block */
+  background-color: var(--pink);
   padding: 40px 20px;
-  color: #ffffff;
+  color: var(--white);
 }
 
-#contact h2 {
+section#contact > h2 {
   margin-bottom: 15px;
 }
 
-#contact p {
+section#contact > p {
   margin-bottom: 25px;
 }
 
-#contact .menu-button {
-  background-color: #E9BB57; /* Yellow button */
+section#contact > a {
+  background-color: var(--yellow);
+  color: var(--dark-gray);
+  text-decoration: none;
+  font-weight: bold;
   width: auto;
   padding: 12px 40px;
   display: inline-block;
+  border-radius: 4px;
 }
 
-/* FOOTER */
-footer {
+/* Footer Section */
+body > footer {
   text-align: center;
   padding: 20px;
-  color: #ffffff;
+  color: var(--white);
   font-size: 0.9em;
 }
 
-footer a {
-  color: #E9BB57;
+body > footer a {
+  color: var(--yellow);
   text-decoration: none;
 }
