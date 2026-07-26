@@ -1,24 +1,43 @@
 /* Imported Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
 
-/* Global Styles */
+/* Global Styles & Colors */
 body {
     font-family: 'Inter', sans-serif;
     color: #1E1E1E;
-    background-color: #ffffff;
+    background-color: #6B8FE7;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
-/* Headings and Typography */
+.page-container {
+    background-color: #484FB7;
+    max-width: 480px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Typography */
 h1, h2 {
     font-family: 'Kavoon', serif;
+    color: #ffffff;
+    text-align: center;
 }
 
 h1 {
     font-size: 3em;
+    margin-bottom: 5px;
 }
 
 nav h2 {
     font-size: 1.5em;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: #1E1E1E;
 }
 
 h2 {
@@ -27,13 +46,209 @@ h2 {
 
 h3 {
     font-size: 1.5em;
+    font-family: 'Inter', sans-serif;
+    color: #E9BB57;
+    font-weight: bold;
 }
 
 h4 {
     font-size: 1.15em;
+    font-family: 'Inter', sans-serif;
+    color: #484FB7;
+    font-weight: bold;
 }
 
 p, a, li, th, td {
     font-family: 'Inter', sans-serif;
+    color: #1E1E1E;
+}
+
+/* Header & Menu Section */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header > p {
+    color: #ffffff;
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: #E9BB57;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+nav li {
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: #484FB7;
+    font-size: 0.95em;
+    display: block;
+}
+
+/* Services Cards */
+#services > section > section,
+#services > section > div {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+/* Why Choose Us Section */
+#why-choose-us {
+    background-color: #D9526F;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+#why-choose-us ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+#why-choose-us li {
+    padding: 20px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#why-choose-us li:nth-child(1) {
+    background-color: #4CA7C0;
+    color: #1E1E1E;
+}
+
+#why-choose-us li:nth-child(2) {
+    background-color: #6B8FE7;
+    color: #1E1E1E;
+}
+
+#why-choose-us li:nth-child(3) {
+    background-color: #E9BB57;
+    color: #1E1E1E;
+}
+
+#why-choose-us li:nth-child(4) {
+    background-color: #ffffff;
+    color: #1E1E1E;
+}
+
+/* Pricing Tables */
+#prices section {
+    margin-bottom: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+th {
+    background-color: #E9BB57;
+    color: #1E1E1E;
+    padding: 12px;
+    font-size: 0.9em;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.95em;
+}
+
+td:first-child {
+    text-align: left;
+    padding-left: 20px;
+}
+
+td:last-child {
+    text-align: right;
+    padding-right: 20px;
+}
+
+/* Contact / Call to Action Section */
+#contact {
+    background-color: #D9526F;
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#contact h2 {
+    font-family: 'Kavoon', serif;
+    color: #ffffff;
+}
+
+#contact p {
+    color: #ffffff;
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#contact a {
+    background-color: #ffffff;
+    color: #1E1E1E;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #ffffff;
+    font-size: 0.85em;
+}
+
+footer p {
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: underline;
 }
 
