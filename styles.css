@@ -97,16 +97,22 @@ section#services > h2 {
   margin-bottom: 15px;
 }
 
+/* Services Section Cards (White boxes for each service group) */
 section#services > section {
-  margin-bottom: 30px;
-}
-
-section#services article {
-  background-color: var(--white); 
-  border-radius: 8px;
+  background-color: var(--white);
+  border-radius: 12px;
   padding: 20px;
   margin-bottom: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section#services article {
+  padding: 15px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+section#services article:last-child {
+  border-bottom: none;
 }
 
 section#services article > p {
@@ -119,6 +125,46 @@ section#services article > img {
   height: auto;
   display: block;
   margin: 0 auto 10px auto;
+}
+
+/* Pricing Section Cards (White boxes for each pricing group) */
+section#prices > section {
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section#prices > section > h3 {
+  color: var(--teal); /* Teal header inside the white pricing box */
+  margin-bottom: 10px;
+  font-size: 1.15em;
+  font-family: var(--font-text); 
+}
+
+section#prices table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+section#prices th {
+  background-color: var(--yellow);
+  color: var(--dark-gray);
+  padding: 10px;
+  text-align: left;
+  font-family: var(--font-text);
+}
+
+section#prices td {
+  background-color: var(--white);
+  color: var(--dark-gray);
+  padding: 10px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+section#prices tr:last-child td {
+  border-bottom: none;
 }
 
 /* Why Choose Us Section (Using grid and nth-child selectors) */
