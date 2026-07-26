@@ -107,8 +107,11 @@ section#services > section {
 }
 
 section#services article {
-  padding: 15px 0;
-  border-bottom: 1px solid #eeeeee;
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 section#services article:last-child {
@@ -146,6 +149,7 @@ section#prices > section > h3 {
 section#prices table {
   width: 100%;
   border-collapse: collapse;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 section#prices th {
