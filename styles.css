@@ -291,14 +291,11 @@ section#contact > a {
 }
 
 /* Footer Section */
-body > footer {
-  text-align: left-center;
-  padding: 20px;
-  color: var(--white);
-  font-size: 0.9em;
+body > footer > *{
+  margin: 0;
 }
 
-body > footer a {
+body > footer  {
   color: var(--white);
   padding: 20px;
   font-size: 0.9em;
